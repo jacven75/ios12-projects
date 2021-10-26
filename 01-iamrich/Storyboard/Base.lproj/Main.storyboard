@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_1_iamrich" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Ruby-image" translatesAutoresizingMaskIntoConstraints="NO" id="MBI-yF-0xI">
+                                <rect key="frame" x="106.5" y="363" width="201" height="170.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am Rich" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlp-bo-ggB">
+                                <rect key="frame" x="137" y="278" width="140.5" height="45"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="32"/>
+                                <color key="textColor" red="0.91350108389999995" green="0.078041560950000005" blue="0.1657168269" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcq-WY-vci">
+                                <rect key="frame" x="57.5" y="573.5" width="299" height="53"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                <state key="normal" title="Pulsame y serás Rico">
+                                    <color key="titleColor" red="0.87002378700000005" green="0.0" blue="0.1095906571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="bottomPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Byd-6g-wZb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.6413266463999705" green="0.21051119603035107" blue="0.86087566614151001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="qcq-WY-vci" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5pc-fo-jh7"/>
+                            <constraint firstItem="Jlp-bo-ggB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SCf-2B-Qgq"/>
+                            <constraint firstItem="MBI-yF-0xI" firstAttribute="top" secondItem="Jlp-bo-ggB" secondAttribute="bottom" constant="40" id="f6j-oY-Sw4"/>
+                            <constraint firstItem="MBI-yF-0xI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lyK-MH-MaI"/>
+                            <constraint firstItem="MBI-yF-0xI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="n3p-kF-gNP"/>
+                            <constraint firstItem="qcq-WY-vci" firstAttribute="top" secondItem="MBI-yF-0xI" secondAttribute="bottom" constant="40" id="oeq-EK-kYm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewDiamond" destination="MBI-yF-0xI" id="Dwh-08-E1U"/>
+                        <outlet property="labelTitle" destination="Jlp-bo-ggB" id="vyO-i5-alZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ruby-image" width="201" height="170.5"/>
+    </resources>
+</document>
