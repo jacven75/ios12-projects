@@ -38,7 +38,7 @@ class ViewController: UIViewController {
                                          , preferredStyle: UIAlertController.Style.actionSheet)
         
         let action = UIAlertAction(title: "Aceptar", style: .default) { action in
-            print("He pulsado el botón Aceptar.")
+            print("He pulsado el botón de Aceptar.")
         }
         //let action = UIAlertAction(title: "Aceptar", style: .default, handler: nil) //Crear un boton para poder salir de la ventana del mensaje.
         
